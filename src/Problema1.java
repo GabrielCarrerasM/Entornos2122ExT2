@@ -4,25 +4,32 @@ public class Problema1 {
     {
         String n = "";
 
+
         for (int i = 0; i <= 20; i++)
         {
-            if (i % 3 == 0)
+            boolean multi3 = i % 3 == 0;
+            boolean multi5 = i % 5 == 0;
+            boolean multi3YMulti5 = i % 3 == 0 && i % 5 == 0;
+            boolean multi7 = i % 7 == 0;
+            boolean multi11 = i % 11 == 0;
+
+            if (multi3)
             {
                 n += "Fizz";
             }
-            if (i % 5 == 0)
+            if (multi5)
             {
                 n += "Buzz";
             }
-            if (i % 3 == 0 && i % 5 == 0)
+            if (multi3YMulti5)
             {
                 n += "FizzBuzz";
             }
-            if (i % 7 == 0)
+            if (multi7)
             {
                 n += "Foo";
             }
-            if (i % 11 == 0)
+            if (multi11)
             {
                 n += "Boo";
             }
