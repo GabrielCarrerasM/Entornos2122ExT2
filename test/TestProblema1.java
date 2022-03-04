@@ -3,10 +3,10 @@ public class TestProblema1 {
     static String devuelveCadenaTexto()
     {
         String n = "";
-        int num1 = 50;
-        int num2 = 100;
+        int inBucle = 50;
+        int finBucle = 100;
 
-        for (int i = num1; i <= num2; i++)
+        for (int i = inBucle; i <= finBucle; i++)
         {
             if (i % 3 == 0)
             {

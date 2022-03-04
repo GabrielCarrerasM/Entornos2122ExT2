@@ -18,6 +18,14 @@ public class Problema1 {
             {
                 n += "FizzBuzz";
             }
+            if (i % 7 == 0)
+            {
+                n += "Foo";
+            }
+            if (i % 11 == 0)
+            {
+                n += "Boo";
+            }
             else {
                 n += "" + i;
             }
